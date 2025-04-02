@@ -1,0 +1,49 @@
+---
+import { Icon } from 'astro-icon/components'
+
+export interface Props {
+	style: string
+	image: string
+	name: string
+	facebook: string
+	instagram: string
+	whatsapp: string
+}
+const { style, image, name, facebook, instagram, whatsapp } = Astro.props
+---
+
+<article>
+	<div class="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+		<!-- Border Card -->
+		<div
+			class="absolute top-0 right-4 bottom-6 left-0 rounded-4xl border border-pink-300 transition duration-300 group-hover:scale-95 xl:right-6"
+		>
+		</div>
+		<!-- Image Card -->
+		<div class="absolute inset-0 bg-indigo-50" style={style}>
+			<img
+				alt=""
+				width="1120"
+				height="560"
+				style="color:transparent"
+				sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+				class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+				src={image}
+			/>
+		</div>
+	</div>
+	<h3 class="font-display mt-8 text-xl font-bold  text-cyan-800 bg-white text-center px-4 py-2 uppercase font-organic tracking-wider rounded-2xl">
+		{name}
+	</h3>
+	<div class="font-display mt-2 text-xl font-bold  text-cyan-800 bg-pink-300 text-center px-4 py-2 uppercase font-organic tracking-wider rounded-2xl">
+		<a href={facebook} target="_blank">
+			<Icon name="basil--facebook-solid" class="w-6 h-6 inline-block mr-1" />
+		</a>
+		<a href={instagram} target="_blank">
+			<Icon name="basil--instagram-outline" class="w-6 h-6 inline-block" />
+		</a>
+		<a href={whatsapp} target="_blank">
+			<Icon name="basil--whatsapp-outline" class="w-6 h-6 inline-block ml-2" />
+		</a>
+	</div>
+</article>

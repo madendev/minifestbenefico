@@ -1,0 +1,13 @@
+---
+export interface Props {
+  nombre1: string
+  nombre2?: string;
+}
+const { nombre1, nombre2 } = Astro.props;
+---
+<h2
+			
+			class="font-organic text-4xl font-medium tracking-wider text-white sm:text-5xl"
+		>
+			{nombre1}<span class="text-cyan-800">{nombre2}</span>
+		</h2>

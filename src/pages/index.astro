@@ -1,11 +1,115 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import Layout from '../layouts/Layout.astro'
+import '../styles/global.css'
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import minifestPrincesaGabriela from '../assets/minifest-princesa-gabriela.png'
+import minifestGrupos from '../assets/minifest-grupos.png'
+import Hero from '../components/Hero.astro'
+import Footer from '../components/Footer.astro'
+import Section from '../components/Section.astro'
+import Invitados from '../components/Invitados.astro'
+import TrozoWeb from '../components/TrozoWeb.astro'
+import ClipPath from '../components/ClipPath.astro'
+import Colaboradores from '../components/Colaboradores.astro'
 ---
 
 <Layout>
-	<Welcome />
+  <div class="flex w-full flex-col">
+    <Header />
+    <main class="flex-auto">
+      <div class="relative sm:pt-4 sm:pb-24">
+        <Hero />
+      </div>
+      <!-- <Section>
+				<ClipPath />
+				<Invitados />
+			</Section>
+			<Section>
+				<Colaboradores />
+			</Section> -->
+
+      <!-- <section class="py-20 sm:py-32">
+				<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+					<h2
+						class="font-display mx-auto max-w-2xl text-center text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl"
+					>
+						Patrocinadores
+					</h2>
+					<div
+						class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32"
+					>
+						<div class="flex items-center justify-center">
+							<img
+								alt="Transistor"
+								loading="lazy"
+								width="158"
+								height="48"
+								decoding="async"
+								data-nimg="1"
+								style="color:transparent"
+								src={minifestPrincesaGabriela.src}
+							/>
+						</div><div class="flex items-center justify-center">
+							<img
+								alt="Tuple"
+								loading="lazy"
+								width="105"
+								height="48"
+								decoding="async"
+								data-nimg="1"
+								style="color:transparent"
+								src="/_next/static/media/tuple.2f54ed03.svg"
+							/>
+						</div><div class="flex items-center justify-center">
+							<img
+								alt="StaticKit"
+								loading="lazy"
+								width="127"
+								height="48"
+								decoding="async"
+								data-nimg="1"
+								style="color:transparent"
+								src="/_next/static/media/statickit.2e06fcea.svg"
+							/>
+						</div><div class="flex items-center justify-center">
+							<img
+								alt="Mirage"
+								loading="lazy"
+								width="138"
+								height="48"
+								decoding="async"
+								data-nimg="1"
+								style="color:transparent"
+								src="/_next/static/media/mirage.e12f40ad.svg"
+							/>
+						</div><div class="flex items-center justify-center">
+							<img
+								alt="Laravel"
+								loading="lazy"
+								width="136"
+								height="48"
+								decoding="async"
+								data-nimg="1"
+								style="color:transparent"
+								src="/_next/static/media/laravel.6faebf7c.svg"
+							/>
+						</div><div class="flex items-center justify-center">
+							<img
+								alt="Statamic"
+								loading="lazy"
+								width="147"
+								height="48"
+								decoding="async"
+								data-nimg="1"
+								style="color:transparent"
+								src="/_next/static/media/statamic.923101b6.svg"
+							/>
+						</div>
+					</div>
+				</div>
+			</section> -->
+    </main>
+    <Footer />
+  </div>
 </Layout>

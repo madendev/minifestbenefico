@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Organic";
+    src:
+      local("Organic"),
+      url("/public/fonts/Organic-Reguler.otf") format("opentype"),
+  }
+@import "tailwindcss";
+
+@theme {
+    --font-organic: "Organic", sans-serif;
+  }

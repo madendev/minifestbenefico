@@ -1,0 +1,33 @@
+---
+import minifestPrincesaGabriela from '../assets/minifest-princesa-gabriela.png'
+import minifestGrupos from '../assets/minifest-grupos.png'
+---
+
+<div class="hero-container">
+	<section class="hero-section">
+		<figure>
+			<img src={minifestPrincesaGabriela.src} alt="Minifest Benefico" class="mx-auto" />
+		</figure>
+		<figure>
+			<img src={minifestGrupos.src} alt="Minifest Benefico" class="mx-auto" />
+		</figure>
+		<a
+			class="hero-button"
+			href="https://www.fourvenues.com/es/botanic-algeciras/events/minifest-benefico-2025---princesa-gabriela-03-05-2025-KGKO"
+			>Comprar Entradas</a
+		>
+	</section>
+</div>
+
+<style>
+	@reference "../styles/global.css";
+	.hero-container {
+		@apply relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+	}
+	.hero-section {
+		@apply mx-auto max-w-2xl lg:max-w-4xl lg:px-12;
+	}
+	.hero-button {
+		@apply mt-10 inline-flex w-full justify-center rounded-2xl bg-slate-400 p-4 text-base font-semibold text-white transition-colors duration-200 hover:bg-pink-300 hover:text-gray-800 focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500 active:text-gray-800 sm:hidden;
+	}
+</style>

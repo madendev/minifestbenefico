@@ -1,0 +1,162 @@
+---
+import minifestPrincesaGabriela from '../assets/minifest-princesa-gabriela.png'
+import InvitadosCardItem from './InvitadosCardItem.astro'
+import SectionSubtitulo from './SectionSubtitulo.astro'
+import SectionTitulo from './SectionTitulo.astro'
+
+
+const gruposInfo = [
+	{
+		style: 'clip-path:url(#:R57qfja:-0)',
+		image: minifestPrincesaGabriela.src,
+		name: 'Alberto Beltran',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+	},
+	{
+		style: 'clip-path:url(#:R57qfja:-1)',
+		image: minifestPrincesaGabriela.src,
+		name: 'David Hormigo',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+	},
+	{
+		style: 'clip-path:url(#:R57qfja:-2)',
+		image: minifestPrincesaGabriela.src,
+		name: 'Red Lips',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+	},
+    {
+        style: 'clip-path:url(#:R57qfja:-0)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Rakusion & Magnolia',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-1)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Radio Petrarca',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-2)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Un To 11',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-0)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Los Fósiles',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-1)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Antonio Albadalejo',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-2)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Cristo Machete',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-0)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Retrovisión',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-1)',
+        image: minifestPrincesaGabriela.src,
+        name: 'La casa de Batiato',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-2)',
+        image: minifestPrincesaGabriela.src,
+        name: 'KM 90',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-1)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Edu (Tecnico de Sonido)',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+    {
+        style: 'clip-path:url(#:R57qfja:-2)',
+        image: minifestPrincesaGabriela.src,
+        name: 'Karlos Nieto (Deejay)',
+        facebook: 'https://www.facebook.com/botanic-algeciras',
+        instagram: 'https://www.instagram.com/botanic.algeciras',
+        whatsapp: 'https://wa.me/34603713000',
+    },
+]
+---
+
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+	<header class="mx-auto max-w-2xl lg:mx-0">
+		<SectionTitulo nombre1="Invitados" nombre2="Especiales" />
+		<SectionSubtitulo
+			texto="Agradecimientos especiales a nuestros invitados que nos acompañarán altruistamente en este evento."
+		/>
+	</header>
+	<div
+		class="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-3"
+	>
+		<div class="lg:col-span-3">
+			<div
+				class="grid grid-cols-1 gap-x-8 gap-y-10 data-selected:not-data-focus:outline-hidden sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
+				id="headlessui-tabs-panel-:Rdal7qfja:"
+				role="tabpanel"
+				tabindex="0"
+				data-headlessui-state="selected"
+				data-selected=""
+				aria-labelledby="headlessui-tabs-tab-:Rpjal7qfja:"
+			>
+
+            {gruposInfo.map((grupoInfo) => (
+            
+                <InvitadosCardItem
+                    style={grupoInfo.style}
+                    image={grupoInfo.image}
+                    name={grupoInfo.name}
+                    facebook={grupoInfo.facebook}
+                    instagram={grupoInfo.instagram}
+                    whatsapp={grupoInfo.whatsapp}
+                />
+            ))
+            
+            }
+
+			</div>
+		</div>
+	</div>
+</div>
